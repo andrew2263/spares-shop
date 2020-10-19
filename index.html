@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/normalize.css">
+  <link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="dist/main.css">
+  <title>Магазин автозапчастей</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container container-flex">
+        <svg class="sprite">
+          <symbol viewBox="0 0 27 25" id="header-like" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#A8A8A8" stroke-width="2"/>
+          </symbol>
+          <symbol viewBox="0 0 27 25" id="header-like-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+          </symbol>
+          <symbol viewBox="0 0 30 28" id="header-buy" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke="#A8A8A8" stroke-width="2"/>
+            <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke="#A8A8A8" stroke-width="2"/>
+<             <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke="#A8A8A8" stroke-width="2"/>
+          </symbol>
+          <symbol viewBox="0 0 30 28" id="header-buy-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+            <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+  <         <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+          </symbol>
+          <symbol viewBox="0 0 24 26" id="header-account" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+          <symbol viewBox="0 0 24 26" id="header-account-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#a8a8a8"/>
+          </symbol>
+        </svg>
+        <nav class="header__info">
+          <ul class="header__info-list">
+            <li class="header__info-item"><a href="#" class="header__info-link">Магазины</a></li>
+            <li class="header__info-item"><a href="#" class="header__info-link">Акции</a></li>
+            <li class="header__info-item"><a href="#" class="header__info-link">Доставка и оплата</a></li>
+          </ul>
+        </nav>
+        <div class="header__logo">
+          <img src="src/img/logo.svg" alt="Магазин автозапчастей">
+        </div>
+        <div class="header__address">
+          <a href="#" class="header__address-link">
+            <img class="header__address-img" src="src/img/arrow-location.svg" alt="адрес">
+          </a>
+          <address class="header__address-text">Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
+        </div>
+        <ul class="header__account">
+          <li class="header__account-item">
+            <a href="#">
+              <svg class="sprite__element" width="27" height="25">
+                <use xlink:href="#header-like" />
+              </svg>
+              <svg class="sprite__element_active" width="27" height="25">
+                <use xlink:href="#header-like-active" />
+              </svg>
+            </a>
+          </li>
+          <li class="header__account-item">
+            <a href="#">
+              <svg class="sprite__element" width="24" height="26">
+                <use xlink:href="#header-account" />
+              </svg>
+              <svg class="sprite__element_active" width="24" height="26">
+                <use xlink:href="#header-account-active" />
+              </svg>
+            </a>
+          </li>
+          <li class="header__account-item">
+            <a href="#">
+              <svg class="sprite__element" width="30" height="28">
+                <use xlink:href="#header-buy" />
+              </svg>
+              <svg class="sprite__element_active" width="30" height="28">
+                <use xlink:href="#header-buy-active" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item header__menu-item_active"><a href="#" class="header__menu-link">Каталог запчастей</a></a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Каталог ТО</a></li>
+            <li class="header__menu-item"><a href="tires.html" class="header__menu-link">Шины</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Диски</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Аккумуляторы</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Автомасла</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Автолампы</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Аксессуары</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="sparts-adv">
+      <div class="container">
+        <h2 class="visually-hidden">Информация о товарах</h2>
+        <svg class="buttons">
+          <symbol viewBox="0 0 15 9" id="arrow-left-gray" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#BDBDBD"/>
+          </symbol>
+          <symbol viewBox="0 0 15 9" id="arrow-right-gray" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#BDBDBD"/>
+          </symbol>
+          <symbol viewBox="0 0 15 9" id="arrow-left-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#ffffff"/>
+          </symbol>
+          <symbol viewBox="0 0 15 9" id="arrow-right-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#ffffff"/>
+          </symbol>
+          <symbol viewBox="0 0 15 9" id="arrow-left-black" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#333333"/>
+          </symbol>
+          <symbol viewBox="0 0 15 9" id="arrow-right-black" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#333333"/>
+          </symbol>
+        </svg>
+        <div class="sparts-adv__content">
+          <div class="sparts-adv__info swiper-container swiper-container-sale">
+            <div class="swiper-wrapper">
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+              <div class="sparts-adv__info-item swiper-slide">
+                <img src="src/img/banner-sparts@1x.jpg" alt="запчасти" width="870" height="397">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="arrow arrow_sale arrow_sale-left">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-left-white" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9">
+                <use xlink:href="#arrow-left-black" />
+              </svg>
+            </button>
+            <button class="arrow arrow_sale arrow_sale-right">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-right-white" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9">
+                <use xlink:href="#arrow-right-black" />
+              </svg>
+            </button>
+          </div>
+          <article class="sale">
+            <h3 class="sale__heading visually-hidden">Акция</h3>
+            <div class="sale__price">
+              <p class="sale__price_new">200 &#8381;</p>
+              <p class="sale__price_old">500 &#8381;</p>
+            </div>
+            <figure class="sale__figure">
+              <img class="sale__figure-img" src="src/img/sale-lamp.png" alt="Лампа накаливания" class="sale__pic">
+              <figcaption class="sale__figure-descr">Лампочка mini...</figcaption>
+            </figure>
+            <div class="sale__end">
+              <p class="sale__end-text">До конца акции осталось:</p>
+              <div class="sale__end-time">
+                <img src="src/img/timer.svg" alt="таймер" class="sale__end-img">
+                <div class="sale__end-countdown">
+                  <div class="sale__end-countdown-timer">
+                    <time class="sale__end-countdown_number sale__end-countdowm_hours">00</time>
+                    <span class="sale__end-countdown_colon">:</span>
+                    <time class="sale__end-countdown_number sale__end-countdowm_minutes">20</time>
+                    <span class="sale__end-countdown_colon">:</span>
+                    <time class="sale__end-countdown_number sale__end-countdowm_seconds">00</time>
+                  </div>
+                  <div class="sale__end-countdown-descr">
+                    <span class="sale__end-countdown-descr-span">часов</span>
+                    <span class="sale__end-countdown-descr-span">минут</span>
+                    <span class="sale__end-countdown-descr-span">секунд</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="sale__link"></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="sparts-option">
+      <div class="container">
+        <h2 class="visually-hidden">Поиск автозапчастей по параметрам</h2>
+        <div class="tabs">
+          <div class="tabs__wrap">
+            <ul class="tabs__list tabs__list_option">
+              <li class="tabs__item tabs__item_option">
+                <a href="#search-vin-panel" class="tabs__link tabs__link_option">Поиск по VIN</a>
+              </li>
+              <li class="tabs__item tabs__item_active tabs__item_option tabs__item_option_active">
+                <a href="#search-model-panel" class="tabs__link tabs__link_option">Поиск по марке</a>
+              </li>
+              <li class="tabs__item  tabs__item_option">
+                <a href="#search-name-panel" class="tabs__link tabs__link_option">Поиск по названию товара</a>
+              </li>
+              <li class="tabs__item  tabs__item_option">
+                <a href="#search-vcode-panel" class="tabs__link tabs__link_option">Поиск по артикулу</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__wrap">
+          <div class="tabs__panel faded" id="search-vin-panel">
+            <form action="" class="sparts-option__form">
+              <label for="search-vin" class="visually-hidden"></label>
+              <div class="sparts-option__search-wrapper">
+                <input id="search-vin" class="sparts-option__input-search" type="search" required="required" name="sparts-option__input-search"
+                placeholder="Введите VIN автомобиля">
+                <input class="sparts-option__submit" type="submit" value="Искать">
+              </div>
+            </form>
+          </div>
+          <div class="tabs__panel tabs__panel_active faded in" id="search-model-panel">
+            <form action="" class="sparts-option__form">
+              <label for="search-model" class="visually-hidden"></label>
+              <div class="sparts-option__search-wrapper">
+                <input id="search-model" class="sparts-option__input-search" type="search" required="required" name="sparts-option__input-search"
+                placeholder="Введите марку автомобиля">
+                <input class="sparts-option__submit" type="submit" value="Искать">
+              </div>
+            </form>
+          </div>
+          <div class="tabs__panel faded" id="search-name-panel">
+            <form action="" class="sparts-option__form">
+              <label for="search-name" class="visually-hidden"></label>
+              <div class="sparts-option__search-wrapper">
+                <input id="search-name" class="sparts-option__input-search" type="search" required="required" name="sparts-option__input-search"
+                placeholder="Введите название товара">
+                <input class="sparts-option__submit" type="submit" value="Искать">
+              </div>
+            </form>
+          </div>
+          <div class="tabs__panel faded" id="search-vcode-panel">
+            <form action="" class="sparts-option__form">
+              <label for="search-vcode" class="visually-hidden"></label>
+              <div class="sparts-option__search-wrapper">
+                <input id="search-vcode" class="sparts-option__input-search" type="search" required="required" name="sparts-option__input-search"
+                placeholder="Введите артикул">
+                <input class="sparts-option__submit" type="submit" value="Искать">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="#" class="categories__link"></a>
+            <h3 class="categories__name">Автохимия</h3>
+            <div class="categories__icon categories__icon_chemistry"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+          <li class="categories__item categories__item_active">
+            <a href="tires.html" class="categories__link"></a>
+            <h3 class="categories__name">Шины и диски</h3>
+            <div class="categories__icon categories__icon_tires"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link"></a>
+            <h3 class="categories__name">Инструменты</h3>
+            <div class="categories__icon categories__icon_instruments"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link"></a>
+            <h3 class="categories__name">Запчасти на ТО</h3>
+            <div class="categories__icon categories__icon_sp-to"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link"></a>
+            <h3 class="categories__name">Автоэлектроника</h3>
+            <div class="categories__icon categories__icon_electronics"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link"></a>
+            <h3 class="categories__name">Аксессуары и другое</h3>
+            <div class="categories__icon categories__icon_other"></div>
+            <span class="categories__link-descr">Перейти</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <h2>Популярные товары</h2>
+        <div class="tabs">
+          <div class="tabs__wrap">
+            <ul class="tabs__list">
+              <li class="tabs__item tabs__item_active"><a href="#popular-sparts" class="tabs__link">
+                запчасти
+              </a></li>
+              <li class="tabs__item"><a href="#popular-chemistry" class="tabs__link">
+                автохимия
+              </a></li>
+              <li class="tabs__item"><a href="#popular-tires" class="tabs__link">
+                шины и диски
+              </a></li>
+              <li class="tabs__item"><a href="#popular-electronics" class="tabs__link">
+                автоэлектроника
+              </a></li>
+              <li class="tabs__item"><a href="#popular-instruments" class="tabs__link">
+                инструменты
+              </a></li>
+              <li class="tabs__item"><a href="#popular-other" class="tabs__link">
+                аксессуары и другое
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__wrap">
+          <section id="popular-sparts" class="tabs__panel tabs__panel_active faded in">
+            <h3 class="visually-hidden">Запчасти</h3>
+            <div class="popular__container swiper-container swiper-container-popular">
+              <ul class="popular__list swiper-wrapper">
+                <li class="swiper-slide popular__item">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/belt.png" alt="ремень">
+                    <figcaption class="popular__figcap">Ремень</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">440 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="popular__item popular__item_sale swiper-slide">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__winter"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                    <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">11680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="misha_rf_power_205_80_16.html" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="popular__item swiper-slide">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/nokian-2025.png" alt="фара Nokian 2025">
+                    <figcaption class="popular__figcap">Фара Nokian 2025</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="popular__item popular__item_sale swiper-slide">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__summer"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-contyther-245-60-18-105T.png" alt="Contyther Crosh Conta...">
+                    <figcaption class="popular__figcap">Шина 245/60 R18 105T Contyther Crosh Conta...</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price visually-hidden">3800 &#8381;</p>
+                  <div class="popular__presence popular__presence_none">
+                    <div class="popular__presence-text">нет в наличии</div>
+                    <button class="button_underlined popular__presence-button">Сообщить о поступлении</button>
+                  </div>
+                  <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="popular__item swiper-slide">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/nokian-2025.png" alt="фара Nokian 2025">
+                    <figcaption class="popular__figcap">Фара Nokian 2025</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+              </ul>
+            </div>
+            <button class="arrow arrow_popular arrow_popular-left popular-left">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-left-gray" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9"">
+                <use xlink:href="#arrow-left-black" />
+              </svg>
+            </button>
+            <button class="arrow arrow_popular arrow_popular-right popular-right">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-right-gray" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9">
+                <use xlink:href="#arrow-right-black" />
+              </svg>
+            </button>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+          <section id="popular-chemistry" class="popular tabs__panel faded">
+            <h3 class="visually-hidden">Автохимия</h3>
+            <div class="popular__list">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+          <section id="popular-tires" class="popular tabs__panel faded">
+            <h3 class="visually-hidden">Шины и диски</h3>
+            <div class="popular__list">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+          <section id="popular-electronics" class="popular tabs__panel faded">
+            <h3 class="visually-hidden">Автоэлектроника</h3>
+            <div class="popular__list">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+          <section id="popular-instruments" class="popular tabs__panel faded">
+            <h3 class="visually-hidden">Инструменты</h3>
+            <div class="popular__list">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+          <section id="popular-other" class="popular tabs__panel faded">
+            <h3 class="visually-hidden">Аксессуары и другое</h3>
+            <div class="popular__list">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+            <div class="popular__more-wrapper">
+              <button class="popular__more">Смотреть еще</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-content">
+          <img src="src/img/banner-2.jpg" alt="Распродажа до 50%">
+        </div>
+      </div>
+    </div>
+    <section class="addition">
+      <div class="container">
+        <h2>С этим товаром покупают</h2>
+        <div class="tabs">
+          <div class="tabs__wrap">
+            <ul class="tabs__list">
+              <li class="tabs__item"><a href="#addition-sparts" class="tabs__link">
+                запчасти
+              </a></li>
+              <li class="tabs__item"><a href="#addition-chemistry" class="tabs__link">
+                автохимия
+              </a></li>
+              <li class="tabs__item tabs__item_active"><a href="#addition-tires" class="tabs__link">
+                шины и диски
+              </a></li>
+              <li class="tabs__item"><a href="#addition-electronics" class="tabs__link">
+                автоэлектроника
+              </a></li>
+              <li class="tabs__item"><a href="#addition-instruments" class="tabs__link">
+                инструменты
+              </a></li>
+              <li class="tabs__item"><a href="#addition-other" class="tabs__link">
+                аксессуары и другое
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__wrap">
+          <section id="addition-sparts" class="tabs__panel faded">
+            <h3 class="visually-hidden">Запчасти</h3>
+            <div class="popular__list popular__list_add">
+              <div class="popular__item">
+
+              </div>
+            </div>
+          </section>
+          <section id="addition-chemistry" class="tabs__panel faded">
+            <h3 class="visually-hidden">Автохимия</h3>
+            <div class="popular__list popular__list_add">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+          </section>
+          <section id="addition-tires" class="tabs__panel tabs__panel_active faded in">
+            <h3 class="visually-hidden">Шины и диски</h3>
+            <div class="popular__container swiper-container swiper-container-addition">
+              <ul class="popular__list popular__list_add swiper-wrapper">
+                <li class="swiper-slide popular__item popular__item_sale">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__summer"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                    <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price visually-hidden">4800 &#8381;</p>
+                  <div class="popular__presence popular__presence_none">
+                    <div class="popular__presence-text">нет в наличии</div>
+                    <button class="button_underlined popular__presence-button">Сообщить о поступлении</button>
+                  </div>
+                  <a href="misha_rf_power_205_80_16.html" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__winter"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                    <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">11680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="misha_rf_power_205_80_16.html" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="swiper-slide popular__item popular__item_sale">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like popular__like_liked" aria-label="Убрать из избранного">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__summer"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                    <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price visually-hidden">4800 &#8381;</p>
+                  <div class="popular__presence popular__presence_none">
+                    <div class="popular__presence-text">нет в наличии</div>
+                    <button class="button_underlined popular__presence-button">Сообщить о поступлении</button>
+                  </div>
+                  <a href="misha_rf_power_205_80_16.html" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="swiper-slide popular__item popular__item">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__summer"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-contyther-245-60-18-105T.png" alt="Contyther Crosh Conty...">
+                    <figcaption class="popular__figcap">Шина 245/60 R18 105T Contyther Crosh Conty...</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">11680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true">
+                  </div>
+                  <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+                <li class="popular__item popular__item_sale swiper-slide">
+                  <div class="popular__attributes">
+                    <ul class="popular__attributes-list">
+                      <li class="popular__attributes-item">
+                        <button class="popular__like" aria-label="Добавить в избранное">
+                          <svg class="sprite__element" width="27" height="25">
+                            <use xlink:href="#header-like" />
+                          </svg>
+                          <svg class="sprite__element_hover" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                          </svg>
+                          <svg class="sprite__element_active" width="27" height="25">  
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="popular__attributes-item">
+                        <span class="popular__winter"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <figure class="popular__fig">
+                    <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                    <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                  </figure>
+                  <a href="#" class="popular__overlay">быстрый просмотр</a>
+                  <p class="popular__price">11680 &#8381;</p>
+                  <div class="popular__presence" aria-hidden="true"></div>
+                  <a href="misha_rf_power_205_80_16.html" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                </li>
+              </ul>
+            </div>
+            <button class="arrow arrow_popular arrow_popular-left addition-left">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-left-gray" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9">
+                <use xlink:href="#arrow-left-black" />
+              </svg>
+            </button>
+            <button class="arrow arrow_popular arrow_popular-right addition-right">
+              <svg class="arrow_not-hover" width="15" height="9">
+                <use xlink:href="#arrow-right-gray" />
+              </svg>
+              <svg class="arrow_hover" width="15" height="9">
+                <use xlink:href="#arrow-right-black" />
+              </svg>
+            </button>
+          </section>
+          <section id="addition-electronics" class="tabs__panel faded">
+            <h3 class="visually-hidden">Автоэлектроника</h3>
+            <div class="popular__list popular__list_add">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+          </section>
+          <section id="addition-instruments" class="tabs__panel faded">
+            <h3 class="visually-hidden">Инструменты</h3>
+            <div class="popular__list popular__list_add">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+          </section>
+          <section id="addition-other" class="tabs__panel faded">
+            <h3 class="visually-hidden">Аксессуары и другое</h3>
+            <div class="popular__list popular__list_add">
+              <div class="popular__item">
+                
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <form action="" class="footer__form">
+          <h2>Подпишитесь на нашу рассылку и узнавайте об акциях быстрее</h2>
+          <div class="footer__form-block">
+            <label for="footer-email" class="visually-hidden"></label>
+            <input type="email" id="footer-email" class="footer__email" name="footer-email" required="required" placeholder="Введите ваш e-mail:">
+            <input type="submit" class="footer__submit" name="footer-submit" value="Отправить">
+          </div>
+        </form>
+        <div class="footer__info">
+          <h2>Информация</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">
+              О компании
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Контакты
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Реквизиты
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Магазиниы
+            </a></li>
+          </ul>
+        </div>
+        <div class="footer__service">
+          <h2>Сервисный центр</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">
+              Доставка и самовывоз
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Оплата
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Возврат-обмен
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Новости
+            </a></li>
+          </ul>
+        </div>
+        <div class="footer__internet-shop">
+          <h2>Интернет-магазин</h2>
+          <ul class="footer__list footer__list_shop">
+            <li class="footer__item"><a href="#" class="footer__link">
+              Доставка и самовывоз
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Оплаата
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Возврат-обмен
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Новости
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Акции
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Договор оферты
+            </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">
+              Политика обработки персональных данных
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">Интернет-магазин автозапчастей</p>
+    </div>
+  </footer>
+  <script src="node_modules/swiper/js/swiper.min.js"></script>
+  <script src="dist/main.js" defer></script>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container-sale', {
+      direction: 'horizontal',
+      loop: true,
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+
+      navigation: {
+      nextEl: '.arrow_sale-right',
+      prevEl: '.arrow_sale-left',
+      },
+
+      scrollbar: {
+      el: '.swiper-scrollbar',
+      },
+    });
+
+    var mySwiperPopular = new Swiper ('.swiper-container-popular', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: '.popular-right',
+        prevEl: 'popular-left',
+      },
+
+      scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    });
+
+    var mySwiperAddition = new Swiper ('.swiper-container-addition', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: '.addition-right',
+        prevEl: '.addition-left',
+      },
+
+      scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+.header {
+    margin-top: 13px;
+
+    &__top {
+        margin-bottom: 23px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__info {
+        margin-top: 53px;
+    }
+
+    &__info-list {
+        @include flex;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__info-item {
+        margin-right: 40px;
+    }
+
+    &__info-item:last-child {
+        margin-right: 0;
+    }
+
+    &__info-link {
+        transition: all .5s;
+    }
+
+    &__info-link:hover {
+        text-decoration: underline;
+        transition: all .5s;
+    }
+
+    &__logo {
+        margin-top: 34px;
+    }
+
+    &__address {
+        margin-top: 46px;
+        @include flex;
+        justify-content: space-between;
+    }
+
+    &__address-img {
+        transform: rotate(35.3deg);
+        margin-right: 7px;
+    }
+
+    &__address-text {
+        max-width: 300px;
+        color: $color-main-dark;
+        font-size: 20px;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__account {
+        margin-top:55px;
+        @include flex;
+        justify-content: space-between;
+        font-display: row;
+    }
+
+    &__account-item {
+        position: relative;
+        margin-right: 16px;
+        transition: all .5s;
+
+        &:hover .sprite__element {
+            opacity: 0;
+            transition: all .5s;
+        }
+
+        &:hover .sprite__element_active {
+            opacity: 1;
+            transition: all .5s;
+        }
+    }
+
+    &__account-item:last-child {
+        margin-right: 0;
+    }
+
+    &__bottom {
+        border: 1px solid #e5e5e5;
+    }
+
+    &__menu {
+        line-height: 53px;
+        font-size: 20px;
+    }
+
+    &__menu-list {
+        @include flex;
+        justify-content: space-between;
+        font-display: row;
+    }
+
+    &__menu-item {
+        border-bottom: none;
+        transition: all .5s;
+    }
+
+    &__menu-item:hover, &__menu-item_active {
+        border-bottom: 3px solid $color-orange;
+        transition: all .5s;
+    }
+
+    &__menu-item_active {
+        font-weight: 700;
+    }
+    
+}
+
+.sprite {
+    display: none;
+}
+
+
+.sprite__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 100;
+    transition: all .5s;
+
+    &_active {
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &_hover {
+        opacity: 0;
+        transition: all .5s;
+    }
+}

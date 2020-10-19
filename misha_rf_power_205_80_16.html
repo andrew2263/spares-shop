@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/normalize.css">
+    <link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Магазин автозапчастей — Шина 205/80/R16 104Q Misha RF Power Grum</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container container-flex">
+                <svg class="sprite">
+                    <symbol viewBox="0 0 27 25" id="header-like" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#A8A8A8" stroke-width="2"/>
+                    </symbol>
+                    <symbol viewBox="0 0 27 25" id="header-like-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+                    </symbol>
+                    <symbol viewBox="0 0 30 28" id="header-buy" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke="#A8A8A8" stroke-width="2"/>
+                        <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke="#A8A8A8" stroke-width="2"/>
+<                       <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke="#A8A8A8" stroke-width="2"/>
+                    </symbol>
+                    <symbol viewBox="0 0 30 28" id="header-buy-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+                            <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+    <                       <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke="#A8A8A8" stroke-width="2" fill="#a8a8a8"/>
+                    </symbol>
+                    <symbol viewBox="0 0 24 26" id="header-account" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </symbol>
+                    <symbol viewBox="0 0 24 26" id="header-account-active" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#a8a8a8"/>
+                    </symbol>
+                </svg>
+                <nav class="header__info">
+                    <ul class="header__info-list">
+                        <li class="header__info-item"><a href="#" class="header__info-link">Магазины</a></li>
+                        <li class="header__info-item"><a href="#" class="header__info-link">Акции</a></li>
+                        <li class="header__info-item"><a href="#" class="header__info-link">Доставка и оплата</a></li>
+                    </ul>
+                </nav>
+                <div class="header__logo">
+                    <img src="src/img/logo.svg" alt="Магазин автозапчастей">
+                </div>
+                <div class="header__address">
+                    <a href="#" class="header__address-link">
+                        <img class="header__address-img" src="src/img/arrow-location.svg" alt="адрес">
+                    </a>
+                    <address class="header__address-text">Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
+                </div>
+                <ul class="header__account">
+                    <li class="header__account-item">
+                        <a href="#">
+                            <svg class="sprite__element" width="27" height="25">
+                                <use xlink:href="#header-like" />
+                            </svg>
+                            <svg class="sprite__element_active" width="27" height="25">
+                                <use xlink:href="#header-like-active" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__account-item">
+                        <a href="#">
+                            <svg class="sprite__element" width="24" height="26">
+                                <use xlink:href="#header-account" />
+                            </svg>
+                            <svg class="sprite__element_active" width="24" height="26">
+                                <use xlink:href="#header-account-active" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__account-item">
+                        <a href="#">
+                            <svg class="sprite__element" width="30" height="28">
+                                <use xlink:href="#header-buy" />
+                            </svg>
+                            <svg class="sprite__element_active" width="30" height="28">
+                                <use xlink:href="#header-buy-active" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="index.html" class="header__menu-link">Каталог запчастей</a></a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Каталог ТО</a></li>
+                        <li class="header__menu-item header__menu-item_active"><a href="tires.html" class="header__menu-link">Шины</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Диски</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Аккумуляторы</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Автомасла</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Автолампы</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Аксессуары</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <svg class="buttons">
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-left-gray" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#BDBDBD"/>
+                    </symbol>
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-right-gray" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#BDBDBD"/>
+                    </symbol>
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-left-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#ffffff"/>
+                    </symbol>
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-right-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#ffffff"/>
+                    </symbol>
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-left-black" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.60986 4.41937L5.59239 8.54693M1.60986 4.41937L5.65494 0.514467M1.60986 4.41937L14.743 4.65264" stroke="#333333"/>
+                    </symbol>
+                    <symbol viewBox="0 0 15 9" id="tire__arrow-right-black" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3813 4.41936L9.39882 8.54691M13.3813 4.41936L9.33628 0.51445M13.3813 4.41936L0.248227 4.65262" stroke="#333333"/>
+                    </symbol>
+                </svg>
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="tires.html" class="breadcrumbs__link">Шины</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        Шины зимние
+                    </li>
+                    <li class="breadcrumbs__item">
+                        Шина 205/80/R16 104Q Misha RF Power Grum
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product-item">
+            <div class="container container-flex">
+                <section class="product-item-prew">
+                    <div class="product-item__sale">
+                        <button class="product-item__sale-button">Sale</button>
+                        <div class="product-item__sale-present">+ подарок</div>
+                        <div class="product-item__credit">
+                            <div class="product-item__credit_term">0/0/24</div>
+                            <small>625&#8381; в месяц</small>
+                        </div>
+                    </div>
+                    <div class="product-item__photo">
+                        <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q_large.png" alt="Шина 205/80/R16 104Q Misha RF Power Grum">
+                        <div class="product-item__price_wrapper">
+                            <p class="product-item__price_old">15 981 &#8381;</p>
+                        </div>
+                        <div class="product-item__price_wrapper">
+                            <p class="product-item__price_new">12 981 &#8381;</p>
+                        </div>
+                        <button class="button_underlined popular__presence-button product-item__price_lower-button">Нашли дешевле? Снизим цену!</button>
+                    </div>
+                    <div class="product-item__attributes">
+                        <ul class="popular__attributes-list">
+                            <li class="popular__attributes-item">
+                                <span class="popular__winter"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="product-item-descr">
+                    <h2 class="product-item__heading">Шина 205/80/R16 104Q Misha RF Power Grum</h2>
+                    <p class="product-item__code">Код товара: 1380198269</p>
+                    <div class="product-item__buttons">
+                        <button type="button" class="popular__like product-item__button product-item__button_like" aria-label="Добавить в избранное">
+                            <svg class="sprite__element" width="27" height="25">
+                                <use xlink:href="#header-like" />
+                            </svg>
+                            <svg class="sprite__element_hover" width="27" height="25">    
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                            </svg>
+                            <svg class="sprite__element_active" width="27" height="25">    
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="product-item__button product-item__button_compare">
+                            <svg class="sprite__element" width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="16" y="15.7708" width="4" height="11.7255" rx="2" fill="#CDCDCD"/>
+                                <rect x="8" y="0.527588" width="4" height="26.9687" rx="2" fill="#CDCDCD"/>
+                                <rect y="9.90796" width="4" height="17.5883" rx="2" fill="#CDCDCD"/>
+                            </svg>
+                            <svg class="sprite__element_hover" width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="16" y="15.7708" width="4" height="11.7255" rx="2" fill="#48494d"/>
+                                <rect x="8" y="0.527588" width="4" height="26.9687" rx="2" fill="#48494d"/>
+                                <rect y="9.90796" width="4" height="17.5883" rx="2" fill="#48494d"/>
+                            </svg>
+                            <svg class="sprite__element_active" width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="16" y="15.7708" width="4" height="11.7255" rx="2" fill="#ff7931"/>
+                                <rect x="8" y="0.527588" width="4" height="26.9687" rx="2" fill="#ff7931"/>
+                                <rect y="9.90796" width="4" height="17.5883" rx="2" fill="#ff7931"/>
+                            </svg>
+                        </button>
+                        <div class="product-item__rating">
+                            <button type="button" class="product-item__button product-item__button_rate product-item__button_active" data-rating="1">
+                                <svg class="sprite__element" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_hover" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" stroke="#ff7931" stroke-width="2" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_active" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5375 0L14.1278 7.9463H22.5103L15.7287 12.8574L18.3191 20.8037L11.5375 15.8926L4.75593 20.8037L7.34626 12.8574L0.564686 7.9463H8.94717L11.5375 0Z" fill="#FF7931"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="product-item__button product-item__button_rate product-item__button_active" data-rating="2">
+                                <svg class="sprite__element" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_hover" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" stroke="#ff7931" stroke-width="2" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_active" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5375 0L14.1278 7.9463H22.5103L15.7287 12.8574L18.3191 20.8037L11.5375 15.8926L4.75593 20.8037L7.34626 12.8574L0.564686 7.9463H8.94717L11.5375 0Z" fill="#FF7931"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="product-item__button product-item__button_rate product-item__button_active" data-rating="3">
+                                <svg class="sprite__element" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_hover" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" stroke="#ff7931" stroke-width="2" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_active" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5375 0L14.1278 7.9463H22.5103L15.7287 12.8574L18.3191 20.8037L11.5375 15.8926L4.75593 20.8037L7.34626 12.8574L0.564686 7.9463H8.94717L11.5375 0Z" fill="#FF7931"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="product-item__button product-item__button_rate" data-rating="4">
+                                <svg class="sprite__element" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_hover" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" stroke="#ff7931" stroke-width="2" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_active" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5375 0L14.1278 7.9463H22.5103L15.7287 12.8574L18.3191 20.8037L11.5375 15.8926L4.75593 20.8037L7.34626 12.8574L0.564686 7.9463H8.94717L11.5375 0Z" fill="#FF7931"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="product-item__button product-item__button_rate" data-rating="5">
+                                <svg class="sprite__element" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_hover" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1125 0L13.7028 7.9463H22.0853L15.3037 12.8574L17.894 20.8037L11.1125 15.8926L4.33088 20.8037L6.92121 12.8574L0.139637 7.9463H8.52212L11.1125 0Z" stroke="#ff7931" stroke-width="2" fill="#E2E2E2"/>
+                                </svg>
+                                <svg class="sprite__element_active" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5375 0L14.1278 7.9463H22.5103L15.7287 12.8574L18.3191 20.8037L11.5375 15.8926L4.75593 20.8037L7.34626 12.8574L0.564686 7.9463H8.94717L11.5375 0Z" fill="#FF7931"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__wrap">
+                            <ul class="tabs__list tabs__list_product-card">
+                                <li class="tabs__item tabs__item_product-card tabs__item_active">
+                                    <a href="#specs" class="tabs__link tabs__link_product-card">Характеристики</a>
+                                </li>
+                                <li class="tabs__item  tabs__item_product-card">
+                                        <a href="#product-item-presence" class="tabs__link tabs__link_product-card">Наличие в магазине</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__wrap">
+                        <div class="tabs__panel tabs__panel_active faded in" id="specs">
+                            <table class="product-item__specs-table">
+                                <tr>
+                                    <td class="product-item__specs-spec">Производитель</td>
+                                    <td>Кама</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-item__specs-spec">Диаметр</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-item__specs-spec">Сезон</td>
+                                    <td>Всесезонная</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-item__specs-spec">Индекс скорости нагрузки</td>
+                                    <td>141/139L</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-item__specs-spec">Серия</td>
+                                    <td>HN06</td>
+                                </tr>
+                            </table>
+                            <div class="product-item__button_wrapper">
+                                <button type="button" class="button_underlined option__more product-item__show-more">
+                                    Показать еще
+                                </button>
+                            </div>
+                            <div class="product-item__button_wrapper">
+                                <button type="button" class="product-item__buy">
+                                    Купить шину
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tabs__panel faded" id="product-item-presence">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <h2 class="visually-hidden">Доставка и самовывоз</h2>
+                <div class="tabs">
+                    <div class="tabs__wrap">
+                        <ul class="tabs__list tabs__list_delivery">
+                            <li class="tabs__item  tabs__item_delivery">
+                                <a href="#reviews" class="tabs__link tabs__link_delivery">Отзывы</a>
+                            </li>
+                            <li class="tabs__item tabs__item_active tabs__item_delivery tabs__item_delivery_active">
+                                <a href="#pickup" class="tabs__link tabs__link_delivery">Самовывоз</a>
+                            </li>
+                            <li class="tabs__item  tabs__item_delivery">
+                                <a href="#delivery-delivery" class="tabs__link tabs__link_delivery">Доставка</a>
+                            </li>
+                            <li class="tabs__item  tabs__item_delivery">
+                                <a href="#services" class="tabs__link tabs__link_delivery">Услуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__wrap">
+                    <div class="tabs__panel faded" id="reviews"></div>
+                    <div class="tabs__panel tabs__panel_active faded in" id="pickup">
+                        <div class="delivery__pickup">
+                            <div class="delivery__params" >
+                                <div class="delivery__search-wrapper">
+                                    <form class="delivery__search">
+                                        <label for="delivery-pickup-search" class="delivery__search-label">Магазин</label>
+                                        <input type="text" class="delivery__search-input" id="delivery-pickup-search" name="delivery-pickup-search">
+                                        <input type="submit" class="delivery__search-submit" value="">
+                                    </form>
+                                </div>
+                                <form class="delivery__checkbox-form">
+                                    <input type="checkbox" id="delivery-pickup-today" class="option__checkbox delivery__checkbox">
+                                    <label for="delivery-pickup-today">Забрать сегодня</label>
+                                    <input type="checkbox" id="delivery-pickup-tomorrow" class="option__checkbox delivery__checkbox" checked>
+                                    <label for="delivery-pickup-tomorrow">Забрать завтра и позднее</label>
+                                </form>
+                            </div>
+                            <table class="delivery__pickup-table">
+                                <tr class="pickup__head">
+                                    <th class="pickup__address">Адрес</th>
+                                    <th class="pickup__hours">Режим работы</th>
+                                    <th class="pickup__isavailable">Доступно</th>
+                                    <th class="pickup__number">Количество</th>
+                                    <th class="pickup__buy"></th>
+                                </tr>
+                                <tr class="pickup__row">
+                                    <td class="pickup__address">Санкт-Петербург, ул. Большая Конюшенная, д. 19</td>
+                                    <td class="pickup__hours">пн-сб: 08.00-19:00<br>вс: 09:00-17:00</td>
+                                    <td class="pickup__isavailable">Завтра и позднее</td>
+                                    <td class="pickup__number">Мало</td>
+                                    <td class="pickup__buy">
+                                        <button type="button" class="pickup__buy-button">Купить</button>
+                                    </td>
+                                </tr>
+                                <tr class="pickup__row">
+                                    <td class="pickup__address">Санкт-Петербург, ул. Уральская, д. 14</td>
+                                    <td class="pickup__hours">пн-сб: 08.00-21:00<br>вс: 09:00-18:00</td>
+                                    <td class="pickup__isavailable">Завтра и позднее</td>
+                                    <td class="pickup__number">Много</td>
+                                    <td class="pickup__buy">
+                                        <button type="button" class="pickup__buy-button">Купить</button>
+                                    </td>
+                                </tr>
+                                <tr class="pickup__row">
+                                    <td class="pickup__address">Санкт-Петербург, ул. Костюшко, д. 17А</td>
+                                    <td class="pickup__hours">пн-сб: 10.00-20:00<br>вс: 10:00-18:00</td>
+                                    <td class="pickup__isavailable">Завтра и позднее</td>
+                                    <td class="pickup__number">Достаточно</td>
+                                    <td class="pickup__buy">
+                                        <button type="button" class="pickup__buy-button">Купить</button>
+                                    </td>
+                                </tr>
+                                <tr class="pickup__row">
+                                    <td class="pickup__address">Санкт-Петербург, ул. Ворошилова, д. 6И</td>
+                                    <td class="pickup__hours">пн-сб: 09.00-21:00<br>вс: 09:00-18:00</td>
+                                    <td class="pickup__isavailable">Завтра и позднее</td>
+                                    <td class="pickup__number">Мало</td>
+                                    <td class="pickup__buy">
+                                        <button type="button" class="pickup__buy-button">Купить</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tabs__panel faded" id="delivery-delivery"></div>
+                    <div class="tabs__panel faded" id="services"></div>
+                </div>
+            </div>
+        </section>
+        <section class="addition">
+            <div class="container">
+                <h2>С этим товаром покупают</h2>
+                <div class="tabs">
+                    <div class="tabs__wrap">
+                        <ul class="tabs__list">
+                            <li class="tabs__item"><a href="#tires__addition-sparts" class="tabs__link">
+                                запчасти
+                            </a></li>
+                            <li class="tabs__item"><a href="#tires__addition-chemistry" class="tabs__link">
+                                автохимия
+                            </a></li>
+                            <li class="tabs__item tabs__item_active"><a href="#tires__addition-tires" class="tabs__link">
+                                шины и диски
+                            </a></li>
+                            <li class="tabs__item"><a href="#tires__addition-electronics" class="tabs__link">
+                                автоэлектроника
+                            </a></li>
+                            <li class="tabs__item"><a href="#tires__addition-instruments" class="tabs__link">
+                                инструменты
+                            </a></li>
+                            <li class="tabs__item"><a href="#tires__addition-other" class="tabs__link">
+                                аксессуары и другое
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__wrap">
+                    <section id="tires__addition-sparts" class="tabs__panel faded">
+                        <h3 class="visually-hidden">Запчасти</h3>
+                        <div class="popular__list popular__list_add">
+                            <div class="popular__item">
+
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tires__addition-chemistry" class="tabs__panel faded">
+                        <h3 class="visually-hidden">Автохимия</h3>
+                        <div class="popular__list popular__list_add">
+                            <div class="popular__item">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tires__addition-tires" class="tabs__panel tabs__panel_active faded in">
+                        <h3 class="visually-hidden">Шины и диски</h3>
+                        <div class="popular__container swiper-container swiper-container-addition">
+                            <ul class="popular__list popular__list_add swiper-wrapper">
+                                <li class="swiper-slide popular__item popular__item_sale">
+                                    <div class="popular__attributes">
+                                        <ul class="popular__attributes-list">
+                                            <li class="popular__attributes-item">
+                                                <button class="popular__like" aria-label="Добавить в избранное">
+                                                    <svg class="sprite__element" width="27" height="25">
+                                                        <use xlink:href="#header-like" />
+                                                    </svg>
+                                                    <svg class="sprite__element_hover" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                                                    </svg>
+                                                    <svg class="sprite__element_active" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                            <li class="popular__attributes-item">
+                                                <span class="popular__summer"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="popular__fig">
+                                        <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                                        <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                                    </figure>
+                                    <a href="#" class="popular__overlay">быстрый просмотр</a>
+                                    <p class="popular__price visually-hidden">4800 &#8381;</p>
+                                    <div class="popular__presence popular__presence_none">
+                                        <div class="popular__presence-text">нет в наличии</div>
+                                        <button class="button_underlined popular__presence-button">Сообщить о поступлении</button>
+                                    </div>
+                                    <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                                </li>
+                                <li class="swiper-slide popular__item">
+                                    <div class="popular__attributes">
+                                        <ul class="popular__attributes-list">
+                                            <li class="popular__attributes-item">
+                                                <button class="popular__like" aria-label="Добавить в избранное">
+                                                    <svg class="sprite__element" width="27" height="25">
+                                                        <use xlink:href="#header-like" />
+                                                    </svg>
+                                                    <svg class="sprite__element_hover" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                                                    </svg>
+                                                    <svg class="sprite__element_active" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                            <li class="popular__attributes-item">
+                                                <span class="popular__winter"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="popular__fig">
+                                        <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                                        <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                                    </figure>
+                                    <a href="#" class="popular__overlay">быстрый просмотр</a>
+                                    <p class="popular__price">11680 &#8381;</p>
+                                    <div class="popular__presence" aria-hidden="true"></div>
+                                    <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                                </li>
+                                <li class="swiper-slide popular__item popular__item_sale">
+                                    <div class="popular__attributes">
+                                        <ul class="popular__attributes-list">
+                                            <li class="popular__attributes-item">
+                                                <button class="popular__like popular__like_liked" aria-label="Убрать из избранного">
+                                                    <svg class="sprite__element" width="27" height="25">
+                                                        <use xlink:href="#header-like" />
+                                                    </svg>
+                                                    <svg class="sprite__element_hover" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                                                    </svg>
+                                                    <svg class="sprite__element_active" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                            <li class="popular__attributes-item">
+                                                <span class="popular__summer"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="popular__fig">
+                                        <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                                        <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                                    </figure>
+                                    <a href="#" class="popular__overlay">быстрый просмотр</a>
+                                    <p class="popular__price visually-hidden">4800 &#8381;</p>
+                                    <div class="popular__presence popular__presence_none">
+                                        <div class="popular__presence-text">нет в наличии</div>
+                                        <button class="button_underlined popular__presence-button">Сообщить о поступлении</button>
+                                    </div>
+                                    <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                                </li>
+                                <li class="swiper-slide popular__item popular__item">
+                                    <div class="popular__attributes">
+                                        <ul class="popular__attributes-list">
+                                            <li class="popular__attributes-item">
+                                                <button class="popular__like" aria-label="Добавить в избранное">
+                                                    <svg class="sprite__element" width="27" height="25">
+                                                        <use xlink:href="#header-like" />
+                                                    </svg>
+                                                    <svg class="sprite__element_hover" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                                                    </svg>
+                                                    <svg class="sprite__element_active" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                            <li class="popular__attributes-item">
+                                                <span class="popular__summer"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="popular__fig">
+                                        <img src="src/img/tire-contyther-245-60-18-105T.png" alt="Contyther Crosh Conty...">
+                                        <figcaption class="popular__figcap">Шина 245/60 R18 105T Contyther Crosh Conty...</figcaption>
+                                    </figure>
+                                    <a href="#" class="popular__overlay">быстрый просмотр</a>
+                                    <p class="popular__price">11680 &#8381;</p>
+                                    <div class="popular__presence" aria-hidden="true">
+                                    </div>
+                                    <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                                </li>
+                                <li class="popular__item popular__item_sale swiper-slide">
+                                    <div class="popular__attributes">
+                                        <ul class="popular__attributes-list">
+                                            <li class="popular__attributes-item">
+                                                <button class="popular__like" aria-label="Добавить в избранное">
+                                                    <svg class="sprite__element" width="27" height="25">
+                                                        <use xlink:href="#header-like" />
+                                                    </svg>
+                                                    <svg class="sprite__element_hover" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="transparent"/>
+                                                    </svg>
+                                                    <svg class="sprite__element_active" width="27" height="25">    
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke="#ff7931" stroke-width="2" fill="#ff7931"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                            <li class="popular__attributes-item">
+                                                <span class="popular__winter"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="popular__fig">
+                                        <img src="src/img/tire-misha-rf-power-grum-205-80-16-104Q.png" alt="Misha RF Power Grum">
+                                        <figcaption class="popular__figcap">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                                    </figure>
+                                    <a href="#" class="popular__overlay">быстрый просмотр</a>
+                                    <p class="popular__price">11680 &#8381;</p>
+                                    <div class="popular__presence" aria-hidden="true"></div>
+                                    <a href="#" class="popular__link" aria-label="Перейти на страницу товара"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="arrow arrow_popular arrow_popular-left addition-left">
+                            <svg class="arrow_not-hover" width="15" height="9">
+                                <use xlink:href="#tire__arrow-left-gray" />
+                            </svg>
+                            <svg class="arrow_hover" width="15" height="9">
+                                <use xlink:href="#tire__arrow-left-black" />
+                            </svg>
+                        </button>
+                        <button class="arrow arrow_popular arrow_popular-right addition-right">
+                            <svg class="arrow_not-hover" width="15" height="9">
+                                <use xlink:href="#tire__arrow-right-gray" />
+                            </svg>
+                            <svg class="arrow_hover" width="15" height="9">
+                                <use xlink:href="#tire__arrow-right-black" />
+                            </svg>
+                        </button>
+                    </section>
+                    <section id="tires__addition-electronics" class="tabs__panel faded">
+                        <h3 class="visually-hidden">Автоэлектроника</h3>
+                        <div class="popular__list popular__list_add">
+                            <div class="popular__item">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tires__addition-instruments" class="tabs__panel faded">
+                        <h3 class="visually-hidden">Инструменты</h3>
+                        <div class="popular__list popular__list_add">
+                            <div class="popular__item">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tires__addition-other" class="tabs__panel faded">
+                        <h3 class="visually-hidden">Аксессуары и другое</h3>
+                        <div class="popular__list popular__list_add">
+                            <div class="popular__item">
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <form action="" class="footer__form">
+                    <h2>Подпишитесь на нашу рассылку и узнавайте об акциях быстрее</h2>
+                    <div class="footer__form-block">
+                        <label for="footer-email" class="visually-hidden"></label>
+                        <input type="email" id="footer-email" class="footer__email" name="footer-email" required="required" placeholder="Введите ваш e-mail:">
+                        <input type="submit" class="footer__submit" name="footer-submit" value="Отправить">
+                    </div>
+                </form>
+                <div class="footer__info">
+                    <h2>Информация</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            О компании
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Контакты
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Реквизиты
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Магазиниы
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer__service">
+                    <h2>Сервисный центр</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Доставка и самовывоз
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Оплата
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Возврат-обмен
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Новости
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer__internet-shop">
+                    <h2>Интернет-магазин</h2>
+                    <ul class="footer__list footer__list_shop">
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Доставка и самовывоз
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Оплаата
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Возврат-обмен
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Новости
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Акции
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Договор оферты
+                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">
+                            Политика обработки персональных данных
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">Интернет-магазин автозапчастей</p>
+        </div>
+    </footer>
+    <script src="node_modules/swiper/js/swiper.min.js"></script>
+    <script src="dist/main.js" defer></script>
+    <script>
+        var mySwiperAddition = new Swiper ('.swiper-container-addition', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+
+            navigation: {
+                nextEl: '.addition-right',
+                prevEl: '.addition-left',
+            },
+
+            scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+    </script>
+</body>
+</html>

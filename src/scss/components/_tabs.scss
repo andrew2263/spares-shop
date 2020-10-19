@@ -1,0 +1,120 @@
+.tabs {
+    &__list {
+        @include flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+
+        &_delivery {
+            align-items: center;
+            background-color: #f4f4f6;
+            height: 70px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 35px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 18px;
+        transition: all .5s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transition: all .5s;
+        }
+
+        &_product-card {
+            color: $color-black;
+            opacity: 0.6;
+            font-size: 20px;
+            line-height: 24px;
+            padding-bottom: 5px;
+            margin-right: 15px;
+            transition: all .5s;
+
+            &:hover {
+                opacity: 0.85;
+                transition: all .5s;
+            }
+        }
+
+        &_active {
+            opacity: 1;
+            color: $color-main-dark;
+            font-weight: 700;
+        }
+
+        &:hover::after, &_active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-bottom: 2px solid $color-orange;
+        }
+
+        &_option {
+            padding: 11px 20px 12px;
+            font-size: 20px;
+            line-height: 24px;
+            color: $color-black;
+            margin-right: 30px;
+        }
+
+        &_option:hover, &_option_active {
+            color: $color-main-dark;
+            background-color: $color-bg-gray;
+            border-radius: 5px;
+        }
+        
+        &_option:hover::after, &_option_active::after {
+            display: none;
+        }
+
+        &_option:hover .tabs__link_option {
+            color: $color-main-dark;
+        }
+
+        &_delivery {
+            font-size: 20px;
+            line-height: 25px;
+            padding-bottom: 0;
+            margin: 0 38px;
+            height: 25px;
+
+            &:hover::after, &_active::after {
+                bottom: -6px;
+            }
+        }
+    }
+
+    &__link {
+        &_option {
+            color: $color-black;
+        }
+    }
+
+    &__panel {
+        display: none;
+
+        &.tabs__panel_active {
+            display: block;
+        }
+    }
+}
+
+.faded {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.faded.in {
+    opacity: 1;
+    transition: opacity .5s;
+}
